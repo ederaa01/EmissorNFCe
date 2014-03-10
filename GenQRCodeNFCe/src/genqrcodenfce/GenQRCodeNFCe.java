@@ -21,15 +21,16 @@ package genqrcodenfce;
 
 /**
  *
- * @author renatokrause@gmail.com
+ * @author Renato Krause <renatokrause@gmail.com>
  */
 public class GenQRCodeNFCe {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Exception {
+        QRCodeNFCe qRCodeNFCe = new QRCodeNFCe();
+
     }
     
 }
