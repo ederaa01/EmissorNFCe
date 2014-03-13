@@ -49,14 +49,126 @@ public class DANFE {
     
     public class DivisaoIClass {
         
+        public final String TextoObrigatorioI = "CNPJ:";                
+        public final String TextoObrigatorioII = "Inscrição Estadual:";
+        private boolean ExibirLogo;
+        private BufferedImage LogoDefault;
+        private BufferedImage LogoContribuinte;
+        private String EmitenteRazaoSocial;
+        private String EmitenteCNPJ;
+        private String EmitenteInscricaoEstadual;
+        private String EmitenteEnderecoLogradouro;
+        private String EmitenteEnderecoNumero;
+        private String EmitenteEnderecoBairro;
+        private String EmitenteEnderecoMunicipio;
+        private String EmitenteEnderecoSiglaUF;
+
+        public boolean isExibirLogo() {
+            return ExibirLogo;
+        }
+        public void setExibirLogo(boolean ExibirLogo) {
+            this.ExibirLogo = ExibirLogo;
+        }
+
+        public BufferedImage getLogoDefault() {
+            return LogoDefault;
+        }
+        public void setLogoDefault(BufferedImage LogoDefault) {
+            this.LogoDefault = LogoDefault;
+        }
+
+        public BufferedImage getLogoContribuinte() {
+            return LogoContribuinte;
+        }
+        public void setLogoContribuinte(BufferedImage LogoContribuinte) {
+            this.LogoContribuinte = LogoContribuinte;
+        }
+
+        public String getEmitenteRazaoSocial() {
+            return EmitenteRazaoSocial;
+        }
+        public void setEmitenteRazaoSocial(String EmitenteRazaoSocial) {
+            this.EmitenteRazaoSocial = EmitenteRazaoSocial;
+        }
+
+        public String getEmitenteCNPJ() {
+            return EmitenteCNPJ;
+        }
+        public void setEmitenteCNPJ(String EmitenteCNPJ) {
+            this.EmitenteCNPJ = EmitenteCNPJ;
+        }
+
+        public String getEmitenteInscricaoEstadual() {
+            return EmitenteInscricaoEstadual;
+        }
+        public void setEmitenteInscricaoEstadual(String EmitenteInscricaoEstadual) {
+            this.EmitenteInscricaoEstadual = EmitenteInscricaoEstadual;
+        }
+
+        public String getEmitenteEnderecoLogradouro() {
+            return EmitenteEnderecoLogradouro;
+        }
+        public void setEmitenteEnderecoLogradouro(String EmitenteEnderecoLogradouro) {
+            this.EmitenteEnderecoLogradouro = EmitenteEnderecoLogradouro;
+        }
+
+        public String getEmitenteEnderecoNumero() {
+            return EmitenteEnderecoNumero;
+        }
+        public void setEmitenteEnderecoNumero(String EmitenteEnderecoNumero) {
+            this.EmitenteEnderecoNumero = EmitenteEnderecoNumero;
+        }
+
+        public String getEmitenteEnderecoBairro() {
+            return EmitenteEnderecoBairro;
+        }
+        public void setEmitenteEnderecoBairro(String EmitenteEnderecoBairro) {
+            this.EmitenteEnderecoBairro = EmitenteEnderecoBairro;
+        }
+
+        public String getEmitenteEnderecoMunicipio() {
+            return EmitenteEnderecoMunicipio;
+        }
+        public void setEmitenteEnderecoMunicipio(String EmitenteEnderecoMunicipio) {
+            this.EmitenteEnderecoMunicipio = EmitenteEnderecoMunicipio;
+        }
+
+        public String getEmitenteEnderecoSiglaUF() {
+            return EmitenteEnderecoSiglaUF;
+        }
+        public void setEmitenteEnderecoSiglaUF(String EmitenteEnderecoSiglaUF) {
+            this.EmitenteEnderecoSiglaUF = EmitenteEnderecoSiglaUF;
+        }
+        
     }
     
     public class DivisaoIIClass {
+
+        public final String TextoObrigatorioI = "DANFE NFC-e - Documento Auxiliar";                
+        public final String TextoObrigatorioII = "da Nota Fiscal Eletrônica para Consumidor Final";
+        public final String TextoObrigatorioIII = "Não permite aproveitamento de crédito de ICMS";
         
     }
     
     public class DivisaoIIIClass {
         
+        private boolean ExibirDetalheDeVenda;
+        private String DetalheDeVenda;
+
+        public boolean isExibirDetalheDeVenda() {
+            return ExibirDetalheDeVenda;
+        }
+        public void setExibirDetalheDeVenda(boolean ExibirDetalheDeVenda) {
+            this.ExibirDetalheDeVenda = ExibirDetalheDeVenda;
+        }
+
+        public String getDetalheDeVenda() {
+            return DetalheDeVenda;
+        }
+        public void setDetalheDeVenda(String DetalheDeVenda) {
+            this.DetalheDeVenda = DetalheDeVenda;
+        }
+                
     }
     
     public class DivisaoIVClass {
@@ -74,118 +186,103 @@ public class DANFE {
     public class DivisaoVIIClass {
         
         private final String TextoObrigatorioI = "CONSUMIDOR";
-        public String getTextoObrigatorioI() {
-            return this.TextoObrigatorioI;
-        }
-        
         private final String TextoObrigatorioII = "CNPJ/CPF/ID Estrangeiro:";
-        public String getTextoObrigatorioII() {
-            return this.TextoObrigatorioII;
-        }
-        
         private String CNPJCPFIdEstrangeiro;
-        public String getCNPJCPFIdEstrangeiro() {
-            return this.CNPJCPFIdEstrangeiro;
-        }
-        public void setCNPJCPFIdEstrangeiro(String value) {
-            this.CNPJCPFIdEstrangeiro = value;
-        }
-        
         private String CNPJCPFIdEstrangeiroNomeDoConsumidor;
-        public String getCNPJCPFIdEstrangeiroNomeDoConsumidor() {
-            return this.CNPJCPFIdEstrangeiroNomeDoConsumidor;
+        private String CNPJCPFIdEstrangeiroEnderecoLogradouro;
+        private String CNPJCPFIdEstrangeiroEnderecoNumero;
+        private String CNPJCPFIdEstrangeiroEnderecoBairro;
+        private String CNPJCPFIdEstrangeiroEnderecoMunicipio;
+
+        public String getCNPJCPFIdEstrangeiro() {
+            return CNPJCPFIdEstrangeiro;
         }
-        public void setCNPJCPFIdEstrangeiroNomeDoConsumidor(String value) {
-            this.CNPJCPFIdEstrangeiroNomeDoConsumidor = value;
+        public void setCNPJCPFIdEstrangeiro(String CNPJCPFIdEstrangeiro) {
+            this.CNPJCPFIdEstrangeiro = CNPJCPFIdEstrangeiro;
         }
 
-        private String CNPJCPFIdEstrangeiroEnderecoLogradouro;
+        public String getCNPJCPFIdEstrangeiroNomeDoConsumidor() {
+            return CNPJCPFIdEstrangeiroNomeDoConsumidor;
+        }
+        public void setCNPJCPFIdEstrangeiroNomeDoConsumidor(String CNPJCPFIdEstrangeiroNomeDoConsumidor) {
+            this.CNPJCPFIdEstrangeiroNomeDoConsumidor = CNPJCPFIdEstrangeiroNomeDoConsumidor;
+        }
+
         public String getCNPJCPFIdEstrangeiroEnderecoLogradouro() {
-            return this.CNPJCPFIdEstrangeiroEnderecoLogradouro;
+            return CNPJCPFIdEstrangeiroEnderecoLogradouro;
         }
-        public void setCNPJCPFIdEstrangeiroEnderecoLogradouro(String value) {
-            this.CNPJCPFIdEstrangeiroEnderecoLogradouro = value;
+        public void setCNPJCPFIdEstrangeiroEnderecoLogradouro(String CNPJCPFIdEstrangeiroEnderecoLogradouro) {
+            this.CNPJCPFIdEstrangeiroEnderecoLogradouro = CNPJCPFIdEstrangeiroEnderecoLogradouro;
         }
-        
-        private String CNPJCPFIdEstrangeiroEnderecoNumero;
+
         public String getCNPJCPFIdEstrangeiroEnderecoNumero() {
-            return this.CNPJCPFIdEstrangeiroEnderecoNumero;
+            return CNPJCPFIdEstrangeiroEnderecoNumero;
         }
-        public void setCNPJCPFIdEstrangeiroEnderecoNumero(String value) {
-            this.CNPJCPFIdEstrangeiroEnderecoNumero = value;
+        public void setCNPJCPFIdEstrangeiroEnderecoNumero(String CNPJCPFIdEstrangeiroEnderecoNumero) {
+            this.CNPJCPFIdEstrangeiroEnderecoNumero = CNPJCPFIdEstrangeiroEnderecoNumero;
         }
-        
-        private String CNPJCPFIdEstrangeiroEnderecoBairro;
+
         public String getCNPJCPFIdEstrangeiroEnderecoBairro() {
-            return this.CNPJCPFIdEstrangeiroEnderecoBairro;
+            return CNPJCPFIdEstrangeiroEnderecoBairro;
         }
-        public void setCNPJCPFIdEstrangeiroEnderecoBairro(String value) {
-            this.CNPJCPFIdEstrangeiroEnderecoBairro = value;
+        public void setCNPJCPFIdEstrangeiroEnderecoBairro(String CNPJCPFIdEstrangeiroEnderecoBairro) {
+            this.CNPJCPFIdEstrangeiroEnderecoBairro = CNPJCPFIdEstrangeiroEnderecoBairro;
         }
-        
-        private String CNPJCPFIdEstrangeiroEnderecoMunicipio;
+
         public String getCNPJCPFIdEstrangeiroEnderecoMunicipio() {
-            return this.CNPJCPFIdEstrangeiroEnderecoMunicipio;
+            return CNPJCPFIdEstrangeiroEnderecoMunicipio;
         }
-        public void setCNPJCPFIdEstrangeiroEnderecoMunicipio(String value) {
-            this.CNPJCPFIdEstrangeiroEnderecoMunicipio = value;
-        }
+        public void setCNPJCPFIdEstrangeiroEnderecoMunicipio(String CNPJCPFIdEstrangeiroEnderecoMunicipio) {
+            this.CNPJCPFIdEstrangeiroEnderecoMunicipio = CNPJCPFIdEstrangeiroEnderecoMunicipio;
+        }        
         
     }
     
     public class DivisaoVIIIClass {
         
         private final String TextoObrigatorioI = "Consulta via leitor de QR Code";
-        public String getTextoObrigatorioI() {
-            return this.TextoObrigatorioI;
-        }
-        
         private final String TextoObrigatorioII = "Protocolo de autorização:";
-        public String getTextoObrigatorioII() {
-            return this.TextoObrigatorioII;
-        }
-        
         private int QRCodeWidth;        
-        public int getQRCodeWidth() {
-            return this.QRCodeWidth;
-        }
-        public void setQRCodeWidth(int value) {
-            this.QRCodeWidth = value;
-            
-        }        
-        
         private int QRCodeHeight;
-        public int getQRCodeHeight() {
-            return this.QRCodeHeight;
-        }
-        public void setQRCodeHeight(int value) {
-            this.QRCodeHeight = value;
-        }        
-        
         private BufferedImage QRCode;
-        public BufferedImage getQRCode() {
-            return this.QRCode;
-        }
-        public void setQRCode(BufferedImage value) {
-            this.QRCode = value;
-        }                
-        
         private String ProcoloDeAutorizacao;
-        public String getProcoloDeAutorizacao() {
-            return this.ProcoloDeAutorizacao;
-        }
-        public void setProcoloDeAutorizacao(String value) {
-            this.ProcoloDeAutorizacao = value;
-        }
-        
         private String ProcoloDeAutorizacaoDataHora;                
+
+        public int getQRCodeWidth() {
+            return QRCodeWidth;
+        }
+        public void setQRCodeWidth(int QRCodeWidth) {
+            this.QRCodeWidth = QRCodeWidth;
+        }
+
+        public int getQRCodeHeight() {
+            return QRCodeHeight;
+        }
+        public void setQRCodeHeight(int QRCodeHeight) {
+            this.QRCodeHeight = QRCodeHeight;
+        }
+
+        public BufferedImage getQRCode() {
+            return QRCode;
+        }
+        public void setQRCode(BufferedImage QRCode) {
+            this.QRCode = QRCode;
+        }
+
+        public String getProcoloDeAutorizacao() {
+            return ProcoloDeAutorizacao;
+        }
+        public void setProcoloDeAutorizacao(String ProcoloDeAutorizacao) {
+            this.ProcoloDeAutorizacao = ProcoloDeAutorizacao;
+        }
+
         public String getProcoloDeAutorizacaoDataHora() {
-            return this.ProcoloDeAutorizacaoDataHora;
+            return ProcoloDeAutorizacaoDataHora;
         }
-        public void setProcoloDeAutorizacaoDataHora(String value) {
-            this.ProcoloDeAutorizacaoDataHora = value;
+        public void setProcoloDeAutorizacaoDataHora(String ProcoloDeAutorizacaoDataHora) {
+            this.ProcoloDeAutorizacaoDataHora = ProcoloDeAutorizacaoDataHora;
         }
-        
+
     }
 
 }
