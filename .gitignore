@@ -6,3 +6,8 @@
 *.ear
 /GenQRCodeNFCe/nbproject/private/
 /GenQRCodeNFCe/build/
+/GenQRCodeNFCe/dist/
+/GenDANFENFCe/nbproject/private/
+/NFCe/nbproject/private/
+/NFCe/build/
+/NFCe/dist/

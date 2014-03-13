@@ -1,3 +1,5 @@
+package br.gov.rs.sefaz.nfce;
+
 /*
 GenQRCodeNFCe - Gerador de QR Code para NFC-e
 Copyright (C) 2014  Renato Krause <renatokrause@gmail.com>
@@ -17,7 +19,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-package genqrcodenfce;
+
 
 import java.awt.image.BufferedImage;
 import java.nio.charset.StandardCharsets;
@@ -26,7 +28,7 @@ import java.nio.charset.StandardCharsets;
  *
  * @author Renato Krause <renatokrause@gmail.com>
  */
-public class QRCodeNFCe {
+public class QRCode {
     
     private String chNFe = "";   //Chave de Acesso da NFC-e [44 bytes*]
     public void setChNFe(String value) throws Exception {
@@ -189,7 +191,7 @@ public class QRCodeNFCe {
         return returnString;        
     }
     
-    public BufferedImage generateQRCode(String URLBase, int Width, int Height) throws com.google.zxing.WriterException, Exception {
+    public BufferedImage generateQRCode(String URLBase, int Width, int Height) throws Exception {
         int qRCodeWidth = 900;
         int qRCodeHeight = 900;
         if (Width > 0) qRCodeWidth = Width;
