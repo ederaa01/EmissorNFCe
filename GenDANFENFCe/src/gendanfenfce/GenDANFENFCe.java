@@ -19,6 +19,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 package gendanfenfce;
 
+import br.gov.rs.sefaz.nfce.*;
+
 /**
  *
  * @author Renato Krause <renatokrause@gmail.com>
@@ -29,7 +31,8 @@ public class GenDANFENFCe {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        DANFE dANFE = new DANFE();
+        //dANFE.DivisaoVIII.get
     }
     
 }
