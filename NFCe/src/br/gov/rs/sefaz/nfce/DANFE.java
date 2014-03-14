@@ -49,7 +49,7 @@ public class DANFE {
     
     public class DivisaoIClass {
         
-        public final String TextoObrigatorioI = "CNPJ:";                
+        public final String TextoObrigatorioI = "CNPJ:";
         public final String TextoObrigatorioII = "Inscrição Estadual:";
         private boolean ExibirLogo;
         private BufferedImage LogoDefault;
@@ -177,6 +177,16 @@ public class DANFE {
     
     public class DivisaoVClass {
         
+        public final String TextoObrigatorioI = "Informação dos Tributos Totais Incidentes (Lei Federal 12.741 /2012):";
+        private String TotalTributosIncidentes;
+
+        public String getTotalTributosIncidentes() {
+            return TotalTributosIncidentes;
+        }
+        public void setTotalTributosIncidentes(String TotalTributosIncidentes) {
+            this.TotalTributosIncidentes = TotalTributosIncidentes;
+        }
+                
     }
     
     public class DivisaoVIClass {
@@ -185,8 +195,8 @@ public class DANFE {
     
     public class DivisaoVIIClass {
         
-        private final String TextoObrigatorioI = "CONSUMIDOR";
-        private final String TextoObrigatorioII = "CNPJ/CPF/ID Estrangeiro:";
+        public final String TextoObrigatorioI = "CONSUMIDOR";
+        public final String TextoObrigatorioII = "CNPJ/CPF/ID Estrangeiro:";
         private String CNPJCPFIdEstrangeiro;
         private String CNPJCPFIdEstrangeiroNomeDoConsumidor;
         private String CNPJCPFIdEstrangeiroEnderecoLogradouro;
@@ -240,8 +250,8 @@ public class DANFE {
     
     public class DivisaoVIIIClass {
         
-        private final String TextoObrigatorioI = "Consulta via leitor de QR Code";
-        private final String TextoObrigatorioII = "Protocolo de autorização:";
+        public final String TextoObrigatorioI = "Consulta via leitor de QR Code";
+        public final String TextoObrigatorioII = "Protocolo de autorização:";
         private int QRCodeWidth;        
         private int QRCodeHeight;
         private BufferedImage QRCode;
