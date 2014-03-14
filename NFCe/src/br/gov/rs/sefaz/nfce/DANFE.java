@@ -20,6 +20,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 package br.gov.rs.sefaz.nfce;
 
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 /**
  *
@@ -172,6 +173,38 @@ public class DANFE {
     }
     
     public class DivisaoIVClass {
+        
+        public final String TextoObrigatorioI = "QTD. TOTAL DE ITENS";
+        public final String TextoObrigatorioII = "VALOR TOTAL R$";
+        public final String TextoObrigatorioIII = "FORMA DE PAGAMENTO";
+        public final String TextoObrigatorioIV = "VALOR PAGO";
+        private String QtdTotalDeItens;
+        private String ValorTotal;
+        private ArrayList<String[]> Pagamento;
+
+        public String getQtdTotalDeItens() {
+            return QtdTotalDeItens;
+        }
+        public void setQtdTotalDeItens(String QtdTotalDeItens) {
+            this.QtdTotalDeItens = QtdTotalDeItens;
+        }
+
+        public String getValorTotal() {
+            return ValorTotal;
+        }
+        public void setValorTotal(String ValorTotal) {
+            this.ValorTotal = ValorTotal;
+        }
+
+        public ArrayList<String[]> getPagamento() {
+            return Pagamento;
+        }
+        public void setPagamento(ArrayList<String[]> Pagamento) {
+            this.Pagamento = Pagamento;
+        }
+        public void addPagamento(String FormaDePagamento, String ValorPago) {
+            this.Pagamento.add(new String[]{FormaDePagamento, ValorPago});
+        }
         
     }
     
