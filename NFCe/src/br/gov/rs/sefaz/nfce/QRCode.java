@@ -1,5 +1,3 @@
-package br.gov.rs.sefaz.nfce;
-
 /*
 GenQRCodeNFCe - Gerador de QR Code para NFC-e
 Copyright (C) 2014  Renato Krause <renatokrause@gmail.com>
@@ -19,7 +17,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-
+package br.gov.rs.sefaz.nfce;
 
 import java.awt.image.BufferedImage;
 import java.nio.charset.StandardCharsets;

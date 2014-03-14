@@ -49,7 +49,7 @@ public class GenQRCode {
                 if (argParam.charAt(0) == '-') {
                     if (argParam.charAt(1) != '-') {
                         InvalidSyntax = true;
-                        System.err.println("Invalid syntax.");
+                        System.err.println("Sintaxe inválida.");
                     }
                     String argValue = "";
                     if (((i+1) < args.length) && (args[i+1].charAt(0) != '-')) argValue = args[i+1];
@@ -153,13 +153,17 @@ public class GenQRCode {
             if (NothingToDo || InvalidSyntax || (bufferedImage == null) || (SaveAs == null)) showHelp();
             else ImageIO.write(bufferedImage, "jpg", SaveAs);
         }
-        /*
-        java -jar GenQRCode.jar --chNFe 43120910585504000174650010000000541123456781 --nVersao 100 --tpAmb 2 --cDest 12345678909 --dhEmi 2012-09-27T16:20:34-03:00 --vNF 1000.00 --vICMS 180.00 --digVal 37327151612b623074616f514f3966414a7766646c5875715176383d --cIdToken 000001 --token 1058550420130001 --baseURL https://www.sefaz.rs.gov.br/NFCE/NFCE-COM.aspx? --saveAs C:\Users\renatoj\Documents\GitHub\EmissorNFCe\GenQRCode\dist\output.jpg
-        */
     }
     
     private static void showHelp() {
-        System.out.println(">HELP<");
+        System.out.println("");
+        System.out.println("    - AJUDA -    ");
+        System.out.println("");
+        System.out.println("java -jar GenQRCode.jar --chNFe [chNFe] --nVersao [nVersao] --tpAmb [tpAmb] --cDest [cDest] --dhEmi [dhEmi] --vNF [vNF] --vICMS [vICMS] --digVal [digVal] --cHashQRCode [cHashQRCode] --cIdToken [cIdToken] --token [token] --width [width] --height [height] --baseURL [URL] --saveAs [Filename Path]");
+        System.out.println("");
+        System.out.println("* Se o campo cHashQRCode não for informado ele será calculado automáticamente.");
+        System.out.println("* Se width e/ou height não forem informados será usado o valor de 900 para a propriedade não informada.");
     }
     
 }
+//java -jar GenQRCode.jar --chNFe 43120910585504000174650010000000541123456781 --nVersao 100 --tpAmb 2 --cDest 12345678909 --dhEmi 2012-09-27T16:20:34-03:00 --vNF 1000.00 --vICMS 180.00 --digVal 37327151612b623074616f514f3966414a7766646c5875715176383d --cIdToken 000001 --token 1058550420130001 --baseURL https://www.sefaz.rs.gov.br/NFCE/NFCE-COM.aspx? --saveAs C:\Users\renatoj\Documents\GitHub\EmissorNFCe\GenQRCode\dist\output.jpg
